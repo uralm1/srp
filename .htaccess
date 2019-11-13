@@ -1,0 +1,8 @@
+DirectoryIndex srp.pl
+IndexIgnore *
+Options +ExecCGI
+AddHandler cgi-script .pl
+
+<FilesMatch ".+\.(pm|conf|log)$">
+  require all denied
+</FilesMatch>
